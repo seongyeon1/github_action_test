@@ -1,5 +1,5 @@
 name: helloGithubAction
- 
+
 on: [push]
 
 jobs:
@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run Python
+    - name: 1. 파일 목록 출력
+      run: ls
+    - name: 2. 파이썬 실행
       run: python test.py
